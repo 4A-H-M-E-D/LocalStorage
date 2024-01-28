@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Practica LocalStorage</title>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="alert alert-danger text-center d-none fw-bold text-danger"></div>
+
+        <form class="border border-secondary p-5" id="formulario">
+            <legend class="text-center text-info display-4">Local Storage</legend>
+
+            <label class="h4" for="producto">Producto:</label>
+            <input type="text" id="producto" class="form-control form-control-lg" name="nombre" placeholder="Ingrese una tarea...">
+
+            <button type="submit" class="btn btn-primary btn-lg mt-4 ">Enviar</button>
+        </form>
+
+        <section id="pintarTarea" class="mt-3">
+
+        </section>
+    </div>
+    
+    <template id="templateTarea">
+        <div class="col-12 d-flex justify-content-between alert alert-success align-items-center">
+            <h2 class="lead mb-0"></h2>
+            <button class="btn btn-danger btn-lg">Eliminar</button>
+        </div>
+    </template>
+
+    <script src="app.js"></script>
+</body>
+</html>
